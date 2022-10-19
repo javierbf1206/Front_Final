@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesCategoria.js"></script>
+
+
+    </head>
+
+    <body>
+        <h1>Categoria</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="room.html">Room</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+
+        
+        
+        <input type="text" id="name" placeholder="nombre">
+        <input type="text"id="description" placeholder="descripcion" ><br>
+        
+        <button onclick="postCategoria()">
+            Crear Categoria
+        </button>
+
+        <script type="text/javascript">
+            window.onload = getCategoria();
+        </script>
+
+        <div id="resultado1"></div>
+
+
+    </body>
+
+
+
+</html>
